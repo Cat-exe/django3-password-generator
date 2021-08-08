@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>About</title>
+</head>
+<body>
+
+    <div class="container text-justify" style="margin-top: 10%;">
+        <h1>Password Generator</h1>
+
+        <h2 style="margin-top: 30px; margin-bottom: 30px;">About the Project</h2>
+        
+        <p>This is my first project that uses Django! I started off by getting practice with urls.py and views.py, and understanding how it is all connected to the templates.</p>
+        <p>The goal was to create a Password generator that allows the user to choose between including uppercase letters, numbers and special characters in it. It uses the random Python library to choose random characters from a list of each type of possible character.</p>
+        <p>- Carol Pignato, August 7th, 2021</p>
+        <a href="{% url 'home' %}">Back to main page</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Homepage</title>
+</head>
+<body>
+    
+    <div class="container text-center">
+        <header> <h1>Password Generator</h1> </header>
+        <!-- Refers to the third parameter and matches it in the dictionary. -->
+        <!-- Use form to send information from one page to another. -->
+        <!-- action attribute tells form where to go -->
+        <form action="{% url 'password' %}">
+            Password length:
+            <select name="length">
+                <option value="6">6 chars long</option>
+                <option value="7">7 chars long</option>
+                <option value="8">8 chars long</option>
+                <option value="9">9 chars long</option>
+                <option value="11">10 chars long</option>
+                <option value="10">11 chars long</option>
+                <!-- 12 is selected by default using "selected attribute" -->
+                <option value="12", selected="selected">12 chars long</option>
+                <option value="13">13 chars long</option>
+                <option value="14">14 chars long</option>
+            </select>
+            <br>
+            Include uppercase letters? <input type="checkbox" name="uppercase">
+            <br>
+            Include numbers? <input type="checkbox" name="numbers">
+            <br>
+            Include special characters? <input type="checkbox" name="special">
+            <br>
+        
+            <br>
+            <input type="submit" value="Generate Password" class="btn btn-primary">
+        </form>
+        <footer>
+            <a href="{% url 'about' %}">About this project</a>
+        </footer>
+    </div>
+</body>
+</html>
