@@ -1,7 +1,7 @@
 # Password Generator
 
 ## Uses:
-* Django
+* Django3
 * Python
 * HTML5
 * Bootstrap5
